@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="description" content="A checklist webpage I made.">
+    <meta name="author" content="CatXx1212">
+    <title>Trackpad</title>
+    <script>
+        
+      var currentVersionNumber = "0.1.0";  // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< the vesion number is here now
+  
+      ["styles/main.css", "styles/themes.css"].forEach((stylesheetREF) => {
+        let stylesheet = document.createElement("link");
+        stylesheet.rel = "stylesheet";
+        stylesheet.href = `${stylesheetREF}?v=${currentVersionNumber}`;
+        document.head.appendChild(stylesheet);
+      });
+    </script>
+    <link rel="icon" href="assets/ico/favicon.ico"/>
+  </head>
+  <body class="">
+    <header>
+      <p class="header_title textColor">Trackpad</p>
+      <img id="settingsButton" class="icon" src="assets/settingsIcon_light.png" title="Open the settings menu"/>
+      <img id="themeMenuButton" class="icon" src="assets/themeButton_light.png" title="Change theme"/>
+    </header>
+    <main class="backgroundColor">
+      <div class="addNewItemButtonContainer">
+        <div id="addNewItemButton">
+          <p class="addNewItemButton_text textColor">Add a new item</p>
+          <div class="addNewItemButton_decor1 backgroundColor"></div>
+          <div class="addNewItemButton_decor2 backgroundColor"></div>
+          <div class="addNewItemButton_decor3 backgroundColor"></div>
+          <div class="addNewItemButton_decor4 backgroundColor"></div>
+        </div>
+      </div>
+      
+      <p class="section_title" id="todoSection_title">To-do: (0)</p>
+      <div id="todoSection" class="section sectionColor"></div>
+
+      <p class="section_title" id="completedSection_title">Completed: (0)</p>
+      <div id="completedSection" class="section sectionColor"></div>
+
+      <p class="section_title" id="deletedSection_title">Deleted: (0)</p>
+      <div id="deletedSection" class="section sectionColor"></div>
+
+    </main>
+    <footer class="footer_color">
+      <a href="https://catxx1212.com" target="_blank">
+        <p class="copyright">© 2024 CatXx1212. All Rights Reserved.</p>
+      </a>
+      <a href="https://github.com/Midnightandstillup" target="_blank">
+        <img class="githubLinkImage icon" src="assets/github-mark/github-mark-light.svg"/>
+      </a>
+    </footer>
+    <script>
+      ["scripts/main.js"].forEach((scriptREF) => {
+        let script = document.createElement("script");
+        script.defer = true;
+        script.src = `${scriptREF}?v=${currentVersionNumber}`;
+        document.body.appendChild(script);
+      })
+    </script>
+  </body>
+</html>

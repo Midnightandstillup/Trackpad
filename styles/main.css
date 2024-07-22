@@ -1,0 +1,522 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(245, 245, 245);
+  overflow: hidden;
+}
+p {
+  margin: 0;
+}
+a {
+  color: unset;
+  text-decoration: unset;
+}
+
+header {
+  width: 100%;
+  height: 8%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+  .header_title {
+    font-size: 3.5vh;
+  }
+  #settingsButton {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    height: 90%;
+    aspect-ratio: 1 / 1;
+    transition: all 0.75s;
+    cursor: pointer;
+  }
+    #settingsButton:hover {
+      transform: scale(90%) rotate(360deg);
+    }
+  #themeMenuButton {
+    position: absolute;
+    right: 15%;
+    height: 90%;
+    aspect-ratio: 1 / 1;
+    transition: all 0.75s;
+    cursor: pointer;
+  }
+    #themeMenuButton:hover {
+      transform: scale(90%);
+    }
+
+
+main {
+  position: absolute;
+  top: 8.4%;
+  width: 100%;
+  height: 83.5%;
+  overflow: hidden auto;
+  transition: background-color 0.5s;
+}
+  .addNewItemButtonContainer {
+    position: relative;
+    margin-top: 2.5%;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    #addNewItemButton {
+      position: relative;
+      width: 25%;
+      aspect-ratio: 4 / 1;
+      border-radius: 2vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+      #addNewItemButton * {
+        pointer-events: none;
+      }
+    .addNewItemButton_text {
+      font-size: 2.25vw;
+    }
+    .addNewItemButton_decor1 {
+      position: absolute;
+      aspect-ratio: 1 / 1;
+      height: 25%;
+      top: 0; 
+      left: 0;
+      border-radius: 0 0 2vw 0;
+      transition: all 0.5s;
+    }
+    .addNewItemButton_decor2 {
+      position: absolute;
+      aspect-ratio: 1 / 1;
+      height: 0%;
+      top: 0; 
+      right: 0;
+      border-radius: 0 0 0 2vw;
+      transition: all 0.5s;
+    }
+    .addNewItemButton_decor3 {
+      position: absolute;
+      aspect-ratio: 1 / 1;
+      height: 25%;
+      bottom: 0; 
+      right: 0;
+      border-radius: 2vw 0 0 0;
+      transition: all 0.5s;
+    }
+    .addNewItemButton_decor4 {
+      position: absolute;
+      aspect-ratio: 1 / 1;
+      height: 0%;
+      bottom: 0; 
+      left: 0;
+      border-radius: 0 2vw 0 0;
+      transition: all 0.5s;
+    }
+      #addNewItemButton:hover .addNewItemButton_decor1 {
+        height: 0;
+      }
+      #addNewItemButton:hover .addNewItemButton_decor2 {
+        height: 25%;
+      }
+      #addNewItemButton:hover .addNewItemButton_decor3 {
+        height: 0;
+      }
+      #addNewItemButton:hover .addNewItemButton_decor4 {
+        height: 25%;
+      }
+      
+  .section_title {
+    position: relative;
+    width: 100%;
+    font-size: 2.25vw;
+    text-align: center;
+    margin-top: 2.5%;
+    transition: color 0.5s;
+  }
+  .section {
+    position: relative;
+    margin: 5% 5% 0 5% ;
+    width: 90%;
+    transition: all 0.5s;
+  }
+    #deletedSection {
+      margin-bottom: 5%;
+    }
+  .openCloseIcon {
+    position: relative;
+    height: 9%;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    aspect-ratio: 1 / 1;
+  }
+  .itemContainer {
+    position: relative;
+    width: 90%;
+    margin: 2% 5%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+    .item_statusBox {
+      position: relative;
+      aspect-ratio: 1 / 1;
+      height: 2.25vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .item_statusBox_status {
+      position: relative;
+      aspect-ratio: 1 / 1;
+      height: 1.75vw;
+    }
+
+    .item_title {
+      margin-left: 2.5%;
+      font-size: 1.5vw;
+      width: 80%;
+      border: none;
+      background-color: unset;
+      cursor: pointer;
+    }
+    .threeDotMenuIcon {
+      position: absolute;
+      right: 0;
+      height: 150%;
+      aspect-ratio: 1 / 1;
+      pointer-events: all;
+      cursor: pointer;
+    }
+    input::placeholder {
+      opacity: 0.3;
+    }
+      #threeDotContextMenu {
+        position: fixed;
+        z-index: 1000;
+        width: 7.5%;
+      }
+        .threeDotContextMenu_button {
+          text-align: center;
+          padding: 5%;
+          font-size: 2vw;
+          transition: 0.25s all;
+          cursor: pointer;
+        }
+
+
+footer {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 8%;
+  z-index: 999;
+  transition: all 0.5s;
+}
+  .copyright {
+    text-align: center;
+    font-size: 1.75vh;
+    font-weight: bold;
+    position: absolute;
+    left: 2.5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .githubLinkImage {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+    height: 75%;
+    aspect-ratio: 1 / 1;
+    transition: all 0.5s;
+  }
+  .githubLinkImage:hover {
+    transform: translateY(-50%) scale(110%);
+  }
+
+
+
+
+
+
+
+  #themeMenu {
+    position: absolute;
+    right: 0;
+    top: 8%;
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    z-index: 10;
+    transition: all 0.5s;
+
+  }
+   .clickThrough {
+    pointer-events: none;
+   }
+    #themeMenu_themeSection {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-start;
+      transition: all 0.5s;
+      justify-content: space-evenly;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      overflow-y: scroll;
+    }
+      .themeMenu_themeSection_themeButton {
+        position: relative;
+        margin-top: 2.5%;
+        width: 45%;
+        aspect-ratio: 3 / 2;
+        border-radius: 2vh;
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+        .selectedMenuButton {
+          font-weight: bold;
+          text-decoration: underline;
+        }
+        .themeMenu_themeSection_themeButton_themeTitle {
+          position: absolute;
+          text-align: center;
+          width: 100%;
+          font-size: 1vw;
+          bottom: 10%;
+          text-decoration: inherit;
+        }
+        .previewContainer {
+          width: 50%;
+          aspect-ratio: 3 / 2;
+          border-radius: 1vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 5% 25% 0 25%;
+          transition: border 0.5s;
+        }
+          .preview_noPreview {
+            font-size: 1.5vw;
+          }
+  
+          .previewBar {
+            flex: 1;
+            height: 100%;
+          }
+
+
+
+
+#background_settingsMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 25, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+  #settingsMenu {
+    position: relative;
+    aspect-ratio: 6 / 4;
+    width: 50%;
+    border-radius: 2vw 4vw;
+  }
+    .settingsMenu_title {
+      position: relative;
+      text-align: center;
+      font-size: 3vw;
+      margin-top: 2.5%;
+      text-decoration: underline;
+    }
+    .settingsMenu_subTitle {
+      position: relative;
+      text-align: center;
+      font-size: 2vw;
+      margin-top: 0%;
+      text-decoration: underline;
+    }
+    .settingsMenu_inputWrapper {
+      position: relative;
+      margin-top: 5%;
+      display: flex; 
+      justify-content: center; 
+      width: 100%;
+      font-size: 1.5vw;
+    }
+      .settingsInput {
+        margin-left: 2%;
+        font-size: 1.5vw;
+        padding: 0.5%;
+        transform: translateY(-20%);
+        cursor: pointer;
+      }
+    #exportButton {
+      width: 15%;
+      aspect-ratio: 4 / 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 1vw 2vw;
+      margin-right: 2.5%;
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+      #exportButton:hover {
+        transform: scale(90%);
+      }
+    #importButton {
+      width: 15%;
+      aspect-ratio: 4 / 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 2vw 1vw;
+      margin-left:2.5%;
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+      #importButton:hover {
+        transform: scale(90%);
+      }
+      #exportButton p, #importButton p {
+        font-size: 1.5vw;
+        pointer-events: none;
+      }
+      #versionNumber {
+        position: absolute;
+        bottom: 2.5%;
+        text-align: center;
+        width: 100%;
+        font-size: 1vw;
+      }
+
+
+@media screen and (max-width: 1000px) and (orientation: portrait) {
+  header {
+    height: 6%;
+  }
+    .header_title {
+      font-size: 2.75vh;
+    }
+  #settingsButton {
+    right: 5%;
+
+  }
+  #themeMenuButton {
+    right: 20%;
+  }
+  main {
+    position: absolute;
+    top: 6.5%;
+    width: 100%;
+    height: 88.1%;
+    overflow: hidden auto;
+    transition: background-color 0.5s;
+  }
+    #addNewItemButton {
+      width: 60%;
+      aspect-ratio: 4 / 1;
+      transition: all 0.5s;
+    }
+    .addNewItemButton_text {
+      font-size: 5vw;
+    }
+  .section_title {
+    font-size: 4vw;
+    margin-top: 2.5%;
+  }
+  .section {
+    margin: 5% 0 0 1.5% ;
+    width: 95%;
+  }
+  .itemContainer {
+    width: 94%;
+    margin: 2% 4%;
+  }
+    .item_title {
+      margin-left: 2.5%;
+      font-size: 3.4vw;
+    }
+    .item_statusBox {
+      height: 4vw;
+    }
+    .item_statusBox_status {
+      height: 3vw;
+    }
+    input::placeholder {
+      opacity: 0.4;
+    }
+      #threeDotContextMenu {
+        position: fixed;
+        z-index: 1000;
+        width: 10%;
+      }
+        .threeDotContextMenu_button {
+          text-align: center;
+          padding: 5%;
+          font-size: 2.5vw;
+          transition: 0.25s all;
+          cursor: pointer;
+        }
+  footer {
+    height: 5%;
+  }
+    .copyright {
+      font-size: 1.5vh;
+    }
+
+  #themeMenu {
+    top: 6%;
+    width: 50%;
+    aspect-ratio: 1 / 1;
+  }
+    .themeMenu_themeSection_themeButton_themeTitle {
+      font-size: 2.5vw;
+      bottom: 2.5%;
+    }
+
+
+    #settingsMenu {
+      width: 100%;
+    }
+      .settingsMenu_title {
+        font-size: 5vw;
+        margin-top: 2.5%;
+      }
+      .settingsMenu_subTitle {
+        font-size: 4vw;
+        margin-top: 0%;
+      }
+      .settingsMenu_inputWrapper {
+        font-size: 3vw;
+      }
+        .settingsInput {
+          font-size: 3vw;
+        }
+        #exportButton p, #importButton p {
+          font-size: 3vw;
+        }
+        #versionNumber {
+          font-size: 2vw;
+        }
+}

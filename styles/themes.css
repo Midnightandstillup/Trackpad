@@ -1,0 +1,352 @@
+.white_theme {
+  background-color: rgb(255, 255, 255);
+  color: rgb(20, 20, 20);
+}
+  .white_theme header {
+    background-color: rgb(245, 240, 240);
+    border-bottom: 0.5vh solid rgb(50, 50, 55);
+    color: rgb(20, 20, 20)
+  }
+  .white_theme .backgroundColor {
+    background-color: rgb(235, 230, 230);
+    color: rgb(20, 20, 20);
+  }
+    .white_theme #addNewItemButton {
+      background-color: rgb(215, 210, 210);
+    }
+      .white_theme #addNewItemButton:hover {
+        transform: scale(98%);
+        background-color: rgb(205, 200, 200)
+      }
+    .white_theme .sectionColor {
+      border-top: 1vh solid rgb(50, 50, 55);
+      border-right: 0.5vh solid rgb(50, 50, 55);
+      border-bottom: 0.5vh solid rgb(50, 50, 55);
+      border-left: 0.5vh solid rgb(50, 50, 55);
+    }
+    .white_theme .itemStatusColor {
+      border: 0.25vw solid rgb(50, 50, 55);
+    }
+    .white_theme .status_done {
+      background-color: rgb(50, 50, 55);
+    }
+  .white_theme .footer_color {
+    background-color: rgb(245, 240, 240);
+    border-top: 0.5vh solid rgb(50, 50, 55);
+    color: rgb(20, 20, 20);
+  }
+  .white_theme .menu_color {
+    border-top: 0.5vh solid rgb(50, 50, 55);
+    border-left: 0.5vh solid rgb(50, 50, 55);
+    border-bottom: 0.5vh solid rgb(50, 50, 55);
+  }
+    .white_theme .themeMenu_themeSection_color {
+      background-color: rgb(235, 230, 230);
+    }
+      .white_theme .themeMenu_themeSection_themeButton_color {
+        background-color: rgb(235, 230, 230);
+        border: 0.5vh solid rgb(50, 50, 55);
+        color: rgb(20,20,20);
+      }
+      .white_theme .themeMenu_themeSection_themeButton_color:hover {
+        background-color: rgb(215, 210, 210);
+      }
+  .white_theme .popup_color {
+    border: 0.75vh solid rgb(50, 50, 55);
+    background-color: rgb(210, 210, 215);
+  }
+  .white_theme .selectColor {
+    background-color: rgb(210, 210, 215);
+    color: rgb(20, 20, 20);
+  }
+    .white_theme .settingsMenu_hr {
+      margin-top: 1%;
+      border: 0.25vw solid rgb(50, 50, 55);
+    } 
+  .white_theme .contextMenu_color {
+    background-color: rgb(225, 220, 220);
+    border: 0.5vh solid rgb(50, 50, 55);
+  }
+    .white_theme .contextMenu_buttons_color {
+      color: rgb(20, 20, 20);
+    }
+    .white_theme .contextMenu_buttons_color:hover {
+      background-color: rgb(215, 210, 210);
+    }
+  .white_theme .exportImportButtonColor {
+    background-color: rgb(210, 210, 215);
+    border: 0.5vh solid rgb(50, 50, 55);
+    color: rgb(20, 20, 20);
+  }
+  .white_theme .item_title:focus {
+    outline: none;
+    border: 0.25vw solid rgb(50, 50, 55);
+  }
+  
+      
+.black_theme {
+  background-color: rgb(255, 255, 255);
+  color: rgb(230, 230, 230);
+}
+  .black_theme header {
+    background-color: rgb(20, 20, 25);
+    border-bottom: 0.5vh solid rgb(210, 210, 215);
+    color: rgb(230, 230, 230);
+  }
+  .black_theme .textColor {
+    color: rgb(230, 230, 230);
+  }
+  .black_theme .backgroundColor {
+    background-color: rgb(30, 30, 35);
+    color: rgb(230, 230, 230);
+  }
+    .black_theme #addNewItemButton {
+      background-color: rgb(75, 75, 80);
+    }
+      .black_theme #addNewItemButton:hover {
+        transform: scale(98%);
+        background-color: rgb(95, 95, 100);
+      }
+    .black_theme .sectionColor {
+      border-top: 1vh solid rgb(210, 210, 215);
+      border-right: 0.5vh solid rgb(210, 210, 215);
+      border-bottom: 0.5vh solid rgb(210, 210, 215);
+      border-left: 0.5vh solid rgb(210, 210, 215);
+    }
+    .black_theme .itemStatusColor {
+      border: 0.25vw solid rgb(210, 210, 215);
+    }
+    .black_theme .status_done {
+      background-color: rgb(210, 210, 215);
+    }
+  .black_theme .footer_color {
+    background-color: rgb(20, 20, 25);
+    border-top: 0.5vh solid rgb(210, 210, 215);
+    color: rgb(230, 230, 230);
+  }
+  .black_theme .menu_color {
+    border-top: 0.5vh solid rgb(210, 210, 215);
+    border-left: 0.5vh solid rgb(210, 210, 215);
+    border-bottom: 0.5vh solid rgb(210, 210, 215);
+  }
+    .black_theme .themeMenu_themeSection_color {
+      background-color: rgb(30, 30, 35);
+    }
+      .black_theme .themeMenu_themeSection_themeButton_color {
+        background-color: rgb(35, 35, 40);
+        border: 0.5vh solid rgb(210, 210, 215);
+        color: rgb(230,230,230);
+      }
+      .black_theme .themeMenu_themeSection_themeButton_color:hover {
+        background-color: rgb(55, 55, 60);
+      }
+  .black_theme .popup_color {
+    border: 0.75vh solid rgb(210, 210, 215);
+    background-color: rgb(50, 50, 55);
+  }
+  .black_theme .selectColor {
+    background-color: rgb(50, 50, 55);
+    color: rgb(235, 235, 235);
+  }
+    .black_theme .settingsMenu_hr {
+      margin-top: 1%;
+      border: 0.25vw solid rgb(210, 210, 215);
+    } 
+  .black_theme .contextMenu_color {
+    background-color: rgb(20, 20, 25);
+    border: 0.5vh solid rgb(210, 210, 215);
+  }
+    .black_theme .contextMenu_buttons_color {
+      color: rgb(230, 230, 230);
+    }
+    .black_theme .contextMenu_buttons_color:hover {
+      background-color: rgb(30, 30, 35);
+    }
+  .black_theme .exportImportButtonColor {
+     background-color: rgb(50, 50, 55);
+     border: 0.5vh solid rgb(210, 210, 215);
+     color: rgb(230, 230, 230);
+  }
+  .black_theme .item_title:focus {
+    outline: none;
+    border: 0.25vw solid rgb(210, 210, 215);
+  }
+
+
+
+.tannedPaper_theme {
+  background-color: rgb(255, 255, 255);
+  color: rgb(20, 20, 20);
+}
+  .tannedPaper_theme header {
+    background-color: rgb(216, 208, 197);
+    border-bottom: 0.5vh solid rgb(50, 45, 40);
+    color: rgb(20, 20, 20);
+  }
+  .tannedPaper_theme .textColor {
+    color: rgb(20, 20, 20);
+  }
+  .tannedPaper_theme .backgroundColor {
+    background-color: rgb(226, 218, 207);
+    color: rgb(20, 20, 20);
+  }
+    .tannedPaper_theme #addNewItemButton {
+      background-color: rgb(206, 198, 187);
+    }
+      .tannedPaper_theme #addNewItemButton:hover {
+        transform: scale(98%);
+        background-color: rgb(196, 188, 177);
+      }
+    .tannedPaper_theme .sectionColor {
+      border-top: 1vh solid rgb(50, 45, 40);
+      border-right: 0.5vh solid rgb(50, 45, 40);
+      border-bottom: 0.5vh solid rgb(50, 45, 40);
+      border-left: 0.5vh solid rgb(50, 45, 40);
+    }
+    .tannedPaper_theme .itemStatusColor {
+      border: 0.25vw solid rgb(50, 45, 40);
+    }
+    .tannedPaper_theme .status_done {
+      background-color: rgb(50, 45, 40);
+    }
+  .tannedPaper_theme .footer_color {
+    background-color: rgb(216, 208, 197);
+    border-top: 0.5vh solid rgb(50, 45, 40);
+    color: rgb(20, 20, 20);
+  }
+  .tannedPaper_theme .menu_color {
+    border-top: 0.5vh solid rgb(50, 45, 40);
+    border-left: 0.5vh solid rgb(50, 45, 40);
+    border-bottom: 0.5vh solid rgb(50, 45, 40);
+  }
+    .tannedPaper_theme .themeMenu_themeSection_color {
+      background-color: rgb(216, 208, 197);
+    }
+      .tannedPaper_theme .themeMenu_themeSection_themeButton_color {
+        background-color: rgb(206, 198, 187);
+        border: 0.5vh solid rgb(50, 45, 40);
+        color: rgb(20,20,20);
+      }
+      .tannedPaper_theme .themeMenu_themeSection_themeButton_color:hover {
+        background-color: rgb(196, 188, 177);
+      }
+  .tannedPaper_theme .popup_color {
+    border: 0.75vh solid rgb(50, 45, 40);
+    background-color: rgb(206, 198, 187);
+  }
+  .tannedPaper_theme .selectColor {
+    background-color: rgb(206, 198, 187);
+    color: rgb(20, 20, 20);
+  }
+    .tannedPaper_theme .settingsMenu_hr {
+      margin-top: 1%;
+      border: 0.25vw solid rgb(50, 45, 40);
+    } 
+  .tannedPaper_theme .contextMenu_color {
+    background-color: rgb(216, 208, 197);
+    border: 0.5vh solid rgb(50, 45, 40);
+  }
+    .tannedPaper_theme .contextMenu_buttons_color {
+      color: rgb(20, 20, 20);
+    }
+    .tannedPaper_theme .contextMenu_buttons_color:hover {
+      background-color: rgb(206, 198, 187);
+    }
+  .tannedPaper_theme .exportImportButtonColor {
+     background-color: rgb(206, 198, 187);
+     border: 0.5vh solid rgb(50, 45, 40);
+     color: rgb(20, 20, 20);
+  }
+  .tannedPaper_theme .item_title:focus {
+    outline: none;
+    border: 0.25vw solid rgb(50, 45, 40);
+  }
+
+
+.dreams_theme {
+  background-color: rgb(255, 255, 255);
+  color: rgb(20, 20, 20);
+}
+  .dreams_theme header {
+    background-color: rgb(238, 165, 166);
+    border-bottom: 0.5vh solid rgb(50, 45, 45);
+    color: rgb(20, 20, 20);
+  }
+  .dreams_theme .textColor {
+    color: rgb(20, 20, 20);
+  }
+  .dreams_theme .backgroundColor {
+    background: linear-gradient(180deg, rgb(238, 165, 166) 0%, rgb(228, 147, 179) 75%, rgb(183, 132, 183) 100%);
+    color: rgb(20, 20, 20);
+  }
+    .dreams_theme #addNewItemButton {
+      background-color: rgb(228, 155, 156);
+    }
+      .dreams_theme #addNewItemButton:hover {
+        transform: scale(98%);
+        background-color: rgb(218, 145, 146);
+      }
+    .dreams_theme .sectionColor {
+      border-top: 1vh solid rgb(50, 45, 45);
+      border-right: 0.5vh solid rgb(50, 45, 45);
+      border-bottom: 0.5vh solid rgb(50, 45, 45);
+      border-left: 0.5vh solid rgb(50, 45, 45);
+    }
+    .dreams_theme .itemStatusColor {
+      border: 0.25vw solid rgb(50, 45, 45);
+    }
+    .dreams_theme .status_done {
+      background-color: rgb(50, 45, 45);
+    }
+  .dreams_theme .footer_color {
+    background-color: rgb(183, 132, 183);
+    border-top: 0.5vh solid rgb(50, 45, 45);
+    color: rgb(20, 20, 20);
+  }
+  .dreams_theme .menu_color {
+    border-top: 0.5vh solid rgb(50, 45, 45);
+    border-left: 0.5vh solid rgb(50, 45, 45);
+    border-bottom: 0.5vh solid rgb(50, 45, 45);
+  }
+    .dreams_theme .themeMenu_themeSection_color {
+      background-color: rgb(238, 165, 166);
+    }
+      .dreams_theme .themeMenu_themeSection_themeButton_color {
+        background-color: rgb(228, 155, 156);
+        border: 0.5vh solid rgb(50, 45, 45);
+        color: rgb(20,20,20);
+      }
+      .dreams_theme .themeMenu_themeSection_themeButton_color:hover {
+        background-color: rgb(218, 145, 146);
+      }
+  .dreams_theme .popup_color {
+    border: 0.75vh solid rgb(50, 45, 45);
+    background: linear-gradient(180deg, rgb(238, 165, 166) 0%, rgb(228, 147, 179) 50%, rgb(183, 132, 183) 100%);
+  }
+  .dreams_theme .selectColor {
+    background-color: rgb(238, 165, 166);
+    color: rgb(20, 20, 20);
+  }
+    .dreams_theme .settingsMenu_hr {
+      margin-top: 1%;
+      border: 0.25vw solid rgb(50, 45, 45);
+    } 
+  .dreams_theme .contextMenu_color {
+    background-color: rgb(238, 165, 166);
+    border: 0.5vh solid rgb(50, 45, 45);
+  }
+    .dreams_theme .contextMenu_buttons_color {
+      color: rgb(20, 20, 20);
+    }
+    .dreams_theme .contextMenu_buttons_color:hover {
+      background-color: rgb(228, 155, 156);
+    }
+  .dreams_theme .exportImportButtonColor {
+    background-color: rgb(228, 147, 179);
+    border: 0.5vh solid rgb(50, 45, 45);
+    color: rgb(20, 20, 20);
+  }
+  .dreams_theme .item_title:focus {
+    outline: none;
+    border: 0.25vw solid rgb(50, 45, 45);
+  }
