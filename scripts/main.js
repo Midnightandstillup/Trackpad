@@ -104,6 +104,18 @@ var themeList = {
         "rgb(50, 45, 45)",
       ],
     },
+    {
+      themeID: "lavender",
+      themeTitle: "Lavender",
+      themeType: "light",
+      themeCategory: "solid",
+      preview: [
+        "rgb(247, 239, 229)",
+        "rgb(226, 191, 217)",
+        "rgb(200, 161, 224)",
+        "rgb(50, 45, 60)",
+      ],
+    },
   ],
 };
 
@@ -247,6 +259,15 @@ themeMenuButton.addEventListener("click", function openTheThemeMenu(event) {
       document.getElementById("themeMenu").querySelectorAll('*').forEach(element => {element.classList.add("menuSubElement")})
 
       themeMenu_themeSection.innerHTML = loadThemeButtons("solid");
+
+      themeMenu_themeSection.insertAdjacentHTML("beforeend",
+        `
+        <a class="themeMenu_themeSection_themeButton menuSubElement themeMenu_themeSection_themeButton_color" href="https://catxx1212.com/discord" target="_blank">
+          <div>
+            <p class="themeMenu_themeSection_themeButton_themeTitle clickThrough">Request new theme</p>
+          </div>
+        </a>
+      `)
   
     } catch {
       // UI.warn("Unable to attach themeMenu to themeMenu container. You clicked out of the menu too fast.")

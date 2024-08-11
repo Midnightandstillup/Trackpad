@@ -8,8 +8,40 @@
     <meta http-equiv="Expires" content="0" />
     <meta name="description" content="A checklist webpage I made.">
     <meta name="author" content="CatXx1212">
+    <meta name="robots" content="noindex">
     <title>Trackpad</title>
     <style>
+      hr {
+        margin: 2.5% 0 0 0;
+        border: 0.25vw solid rgb(50, 50, 55);
+        transition: all 0.5s;
+      }
+      .changelog_version {
+        position: relative;
+        margin-top: 5%;
+        text-align: center;
+        font-size: 2vw;
+        color: rgb(20, 20, 20);
+        font-weight: bold;
+        transition: all 0.5s;
+      }
+      .changelog_list {
+        position: relative;
+        width: 80%;
+        padding: 0 5%;
+        font-size: 1.70vw;
+        color: rgb(20, 20, 20);
+        pointer-events: none;
+        text-align: center;
+        margin:  2.5% auto 0 auto;
+        transition: all 0.5s;
+      }
+      .changelog_list li {
+        text-align: center;
+        list-style-position: inside;
+        list-style-type: square;
+        margin-bottom: 1%;
+      }
       .loadingScreen {
         position: fixed;
         top: 0%;
@@ -25,7 +57,7 @@
         .loadingScreen_spinner {
           height: 25%;
           aspect-ratio: 1 / 1;
-          background-image: url("assets/loadingDots.png");
+          background-image: url("../assets/loadingDots.png");
           background-size: contain;
           background-repeat: no-repeat;
           animation: loadingSpin 4s linear 0s infinite;
@@ -46,7 +78,7 @@
     <script>
       var currentVersionNumber = "0.1.1";  // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< the vesion number is here now
 
-      let styleArray = ["styles/main.css", "styles/themes.css"]
+      let styleArray = ["../styles/main.css", "../styles/themes.css"]
       let loadedStyles = 0;
       styleArray.forEach((stylesheetREF) => {
         let stylesheet = document.createElement("link");
@@ -73,31 +105,11 @@
     </script>
     <link rel="icon" href="assets/ico/favicon.ico"/>
   </head>
-  <body class="">
+  <body class="white_theme">
     <header>
-      <p class="header_title textColor">Trackpad</p>
-      <img id="settingsButton" class="icon" src="assets/settingsIcon_light.png" title="Open the settings menu"/>
-      <img id="themeMenuButton" class="icon" src="assets/themeButton_light.png" title="Change theme"/>
+      <p class="header_title textColor">Trackpad: Changelog</p>
     </header>
-    <main class="backgroundColor">
-      <div class="addNewItemButtonContainer">
-        <div id="addNewItemButton">
-          <p class="addNewItemButton_text textColor">Add a new item</p>
-          <div class="addNewItemButton_decor1 backgroundColor"></div>
-          <div class="addNewItemButton_decor2 backgroundColor"></div>
-          <div class="addNewItemButton_decor3 backgroundColor"></div>
-          <div class="addNewItemButton_decor4 backgroundColor"></div>
-        </div>
-      </div>
-      
-      <p class="section_title" id="todoSection_title">To-do: (0)</p>
-      <div id="todoSection" class="section sectionColor"></div>
-
-      <p class="section_title" id="completedSection_title">Completed: (0)</p>
-      <div id="completedSection" class="section sectionColor"></div>
-
-      <p class="section_title" id="deletedSection_title">Deleted: (0)</p>
-      <div id="deletedSection" class="section sectionColor"></div>
+    <main class="backgroundColor" id="changelogList">
 
     </main>
     <footer class="footer_color">
@@ -105,19 +117,14 @@
         <p class="copyright">© 2024 CatXx1212. All Rights Reserved.</p>
       </a>
       <a href="https://github.com/Midnightandstillup" target="_blank">
-        <img class="githubLinkImage icon" src="assets/github-mark/github-mark-light.svg"/>
-      </a>
-      <a href="changelog/">
-        <div class="changelogButton itemStatusColor">
-          <p>View changelog</p>
-        </div>
+        <img class="githubLinkImage icon" src="../assets/github-mark/github-mark-light.svg"/>
       </a>
     </footer>
     <div class="loadingScreen">
       <div class="loadingScreen_spinner"></div>
     </div>
     <script>
-      ["scripts/main.js"].forEach((scriptREF) => {
+      ["changelog.js"].forEach((scriptREF) => {
         let script = document.createElement("script");
         script.defer = true;
         script.src = `${scriptREF}?v=${currentVersionNumber}`;

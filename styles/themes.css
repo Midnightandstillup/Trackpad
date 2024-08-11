@@ -350,3 +350,93 @@
     outline: none;
     border: 0.25vw solid rgb(50, 45, 45);
   }
+
+
+
+.lavender_theme {
+  background-color: rgb(255, 255, 255);
+  color: rgb(20, 20, 20);
+}
+  .lavender_theme header {
+    background-color: rgb(247, 239, 229);
+    border-bottom: 0.5vh solid rgb(50, 45, 60);
+    color: rgb(20, 20, 20);
+  }
+  .lavender_theme .textColor {
+    color: rgb(20, 20, 20);
+  }
+  .lavender_theme .backgroundColor {
+    background-color: rgb(226, 191, 217);
+    color: rgb(20, 20, 20);
+  }
+    .lavender_theme #addNewItemButton {
+      background-color: rgb(206, 171, 197);
+    }
+      .lavender_theme #addNewItemButton:hover {
+        transform: scale(98%);
+        background-color: rgb(216, 181, 207);
+      }
+    .lavender_theme .sectionColor {
+      border-top: 1vh solid rgb(50, 45, 60);
+      border-right: 0.5vh solid rgb(50, 45, 60);
+      border-bottom: 0.5vh solid rgb(50, 45, 60);
+      border-left: 0.5vh solid rgb(50, 45, 60);
+    }
+    .lavender_theme .itemStatusColor {
+      border: 0.25vw solid rgb(50, 45, 60);
+    }
+    .lavender_theme .status_done {
+      background-color: rgb(50, 45, 60);
+    }
+  .lavender_theme .footer_color {
+    background-color: rgb(200, 161, 224);
+    border-top: 0.5vh solid rgb(50, 45, 60);
+    color: rgb(20, 20, 20);
+  }
+  .lavender_theme .menu_color {
+    border-top: 0.5vh solid rgb(50, 45, 60);
+    border-left: 0.5vh solid rgb(50, 45, 60);
+    border-bottom: 0.5vh solid rgb(50, 45, 60);
+  }
+    .lavender_theme .themeMenu_themeSection_color {
+      background-color: rgb(247, 239, 229);
+    }
+      .lavender_theme .themeMenu_themeSection_themeButton_color {
+        background-color: rgb(237, 229, 219);
+        border: 0.5vh solid rgb(50, 45, 60);
+        color: rgb(20,20,20);
+      }
+      .lavender_theme .themeMenu_themeSection_themeButton_color:hover {
+        background-color: rgb(217, 209, 199);
+      }
+  .lavender_theme .popup_color {
+    border: 0.75vh solid rgb(50, 45, 60);
+    background-color: rgb(200, 161, 224);
+  }
+  .lavender_theme .selectColor {
+    background-color: rgb(190, 151, 214);
+    color: rgb(20, 20, 20);
+  }
+    .lavender_theme .settingsMenu_hr {
+      margin-top: 1%;
+      border: 0.25vw solid rgb(50, 45, 60);
+    } 
+  .lavender_theme .contextMenu_color {
+    background-color: rgb(226, 191, 217);
+    border: 0.5vh solid rgb(50, 45, 60);
+  }
+    .lavender_theme .contextMenu_buttons_color {
+      color: rgb(20, 20, 20);
+    }
+    .lavender_theme .contextMenu_buttons_color:hover {
+      background-color: rgb(206, 171, 197);
+    }
+  .lavender_theme .exportImportButtonColor {
+    background-color: rgb(190, 151, 214);
+    border: 0.5vh solid rgb(50, 45, 60);
+    color: rgb(20, 20, 20);
+  }
+  .lavender_theme .item_title:focus {
+    outline: none;
+    border: 0.25vw solid rgb(50, 45, 60);
+  }
